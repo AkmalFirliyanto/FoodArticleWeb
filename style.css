@@ -1,0 +1,322 @@
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        
+        nav {
+            position: fixed;
+            display: flex;
+            top: 0;
+            left: 0;
+            width: 100%;
+            align-items: center;
+            justify-content: space-between;
+            transition: 0.6s;
+            z-index: 666;
+        }
+        
+        nav.sticky {
+            background: black;
+            height: 80px;
+        }
+        
+        nav.sticky div h4 {
+            color: white;
+        }
+        
+        nav h4 a {
+            text-decoration: none;
+            color: white;
+        }
+        
+        header {
+            position: relative;
+            display: flex;
+            background-image: url(img/hero.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+            margin-top: 0;
+            color: white;
+            width: 100%;
+            height: 100vh;
+        }
+        
+        header .brand,
+        .article {
+            font-size: 2em;
+            margin-right: 30px;
+            margin-left: 20px;
+            text-shadow: 2px 2px 1px black;
+        }
+        
+        header .judul {
+            font-size: 3em;
+            margin: auto;
+            line-height: 50vh;
+            text-shadow: 3px 3px 2px black;
+        }
+        
+        .container-main {
+            width: 60%;
+            margin-left: 5%;
+            display: flex;
+            box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
+            margin-top: 40px;
+            box-sizing: border-box;
+            flex-direction: column;
+            margin-top: 2rem;
+            padding-right: 2rem;
+            border-radius: 5px;
+            margin-bottom: 2rem;
+        }
+        
+        .container-main h2 {
+            text-align: center;
+            margin-top: 3rem;
+            font-size: 3rem;
+            padding-top: 5rem;
+            padding-bottom: 2rem;
+        }
+        
+        .container-main img {
+            width: 35%;
+            box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+            border-radius: 10px;
+            margin-left: 40px;
+        }
+        
+        img:hover {
+            box-shadow: 0 16px 24px 0 rgba(0, 0, 0, 0.2);
+            transform: scale(1.1);
+        }
+        
+        .container-main h3 {
+            margin-left: 40px;
+            font-size: 2em;
+        }
+        
+        .container-main p {
+            margin-left: 40px;
+            margin-right: 40px;
+            padding-bottom: 3rem;
+            text-align: left;
+            line-height: 1.3em;
+            word-spacing: 1.1em;
+            font-size: 1.3em;
+        }
+        
+        aside {
+            box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
+            height: 300px;
+            position: absolute;
+            border-radius: 4px;
+            left: 67%;
+            margin-right: 5%;
+            text-align: center;
+        }
+        
+        aside img {
+            margin-top: 20px;
+            margin-right: 37px;
+        }
+        
+        aside table {
+            margin: auto;
+        }
+        
+        footer {
+            background-color: rgb(36, 36, 36);
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        
+        footer a {
+            text-decoration: none;
+            color: white;
+        }
+        /* responsive */
+        
+        @media screen and (max-width: 992px) {
+            nav {
+                height: 50%;
+                background-size: cover;
+                background-attachment: fixed;
+            }
+            header {
+                position: relative;
+                display: flex;
+                background-image: url(img/hero.jpg);
+                background-size: cover;
+                background-attachment: fixed;
+                background-position: center;
+                margin-top: 0;
+                color: white;
+                width: 100%;
+                height: 100vh;
+            }
+            header .brand,
+            .article {
+                font-size: 1.6em;
+                margin-right: 30px;
+                margin-left: 20px;
+            }
+            nav.sticky {
+                background: black;
+                height: 80px;
+            }
+            header .judul {
+                font-size: 3em;
+                text-align: center;
+                line-height: 25%;
+                padding-top: 3rem;
+            }
+            .container-main {
+                width: 60%;
+                margin-left: 5%;
+            }
+            aside {
+                box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
+                height: 300px;
+                position: absolute;
+                border-radius: 4px;
+                left: 67%;
+                margin-right: 5%;
+                text-align: center;
+            }
+            aside img {
+                margin-top: 20px;
+                margin-right: 37px;
+            }
+            aside table {
+                margin: auto;
+            }
+        }
+        
+        @media screen and (max-width: 715px) {
+            header .judul {
+                font-size: 2.5em;
+                text-align: center;
+                line-height: 25%;
+                padding-top: 5rem;
+            }
+            header .brand,
+            .article {
+                font-size: 2em;
+                margin-right: 30px;
+                margin-left: 20px;
+            }
+            nav.sticky {
+                background: black;
+                height: 80px;
+            }
+            header {
+                position: relative;
+                display: flex;
+                background-image: url(img/hero.jpg);
+                background-size: cover;
+                background-attachment: fixed;
+                background-position: center;
+                margin-top: 0;
+                color: white;
+                width: 100%;
+                height: 100vh;
+            }
+        }
+        
+        @media screen and (max-width: 600px) {
+            nav {
+                height: 50%;
+                background-size: cover;
+                background-attachment: fixed;
+            }
+            header {
+                position: relative;
+                display: flex;
+                background-image: url(img/hero.jpg);
+                background-size: cover;
+                background-attachment: fixed;
+                background-position: center;
+                margin-top: 0;
+                color: white;
+                width: 100%;
+                height: 100vh;
+            }
+            header .brand,
+            .article {
+                font-size: 2em;
+                margin-right: 30px;
+                margin-left: 20px;
+            }
+            nav.sticky {
+                background: black;
+                height: 80px;
+            }
+            header .judul {
+                font-size: 2em;
+                text-align: center;
+                line-height: 25%;
+            }
+            .container-main {
+                width: 90%;
+                margin-left: 5%;
+                position: relative;
+            }
+            aside {
+                background-color: rgb(173, 173, 173);
+                position: relative;
+                height: 300px;
+                border-radius: 4px;
+                left: 15px;
+                width: 100%;
+                text-align: center;
+            }
+            aside img {
+                margin-top: 20px;
+                margin-right: 37px;
+            }
+            aside table {
+                margin: auto;
+            }
+        }
+        
+        @media screen and (max-width: 470px) {
+            header .judul {
+                font-size: 1.3em;
+                text-align: center;
+                line-height: 25%;
+            }
+            header {
+                position: relative;
+                display: flex;
+                background-image: url(img/hero.jpg);
+                background-size: cover;
+                background-attachment: fixed;
+                background-position: center;
+                margin-top: 0;
+                color: white;
+                width: 100%;
+                height: 100vh;
+            }
+            header .brand,
+            .article {
+                font-size: 2em;
+                margin-right: 30px;
+                margin-left: 20px;
+                margin-top: -30px;
+                margin-bottom: -30px;
+            }
+            header .brand,
+            .article {
+                font-size: 2em;
+                margin-right: 30px;
+                margin-left: 20px;
+                margin-top: -30px;
+                margin-bottom: -30px;
+            }
+        }
